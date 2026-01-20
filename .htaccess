@@ -1,0 +1,20 @@
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Allow access to images in /public/filemanager/
+    RewriteCond %{REQUEST_URI} ^/filemanager/
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    RewriteRule ^filemanager/(.*)$ public/filemanager/$1 [L]
+
+    # If the requested file or directory exists in public_html, do nothing
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Redirect everything else to public/index.php
+    RewriteRule ^ index.php [L]
+</IfModule>
