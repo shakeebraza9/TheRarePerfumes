@@ -37,11 +37,11 @@
 
     <!-- Plugins CSS -->
        <link rel="shortcut icon" href="{{asset($_s['fav_icon'])}}">
-       <link rel="stylesheet" href="{{asset('public/theme/assets/css/plugins.css')}}" />
-       <link href="{{asset('public/admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
-       <link rel="stylesheet" href="{{asset('public/theme/assets/css/style.css')}}" />
-       <link rel="stylesheet" href="{{asset('public/theme/assets/css/responsive.css')}}" />
-       <link href="{{asset('public/admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
+       <link rel="stylesheet" href="{{asset('theme/assets/css/plugins.css')}}" />
+       <link href="{{asset('admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
+       <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}" />
+       <link rel="stylesheet" href="{{asset('theme/assets/css/responsive.css')}}" />
+       <link href="{{asset('admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
 
        <style>
 
@@ -261,9 +261,9 @@
 
 
         <!-- Including Javascript -->
-        <script src="{{asset('public/theme/assets/js/plugins.js')}}"></script>
-        <script src="{{asset('public/theme/assets/js/main.js')}}"></script>
-        <script src="{{asset('public/admin/assets/node_modules/toast-master/js/jquery.toast.js')}}"></script>
+        <script src="{{asset('theme/assets/js/plugins.js')}}"></script>
+        <script src="{{asset('theme/assets/js/main.js')}}"></script>
+        <script src="{{asset('admin/assets/node_modules/toast-master/js/jquery.toast.js')}}"></script>
 
         <script>
 

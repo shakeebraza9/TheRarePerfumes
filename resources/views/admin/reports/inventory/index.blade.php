@@ -243,22 +243,23 @@ button.btn_exe:hover {
                         <div class="card-body">    
                           <div class="table-responsive">
                           <div class="container">
-      <table id="example23" class="mydatatable display nowrap table table-hover table-striped border" cellspacing="0" width="100%">
-                                    <thead>
-                                       
-                                        <tr class="" >
-                                            <th>Category</th> 
-                                            <th>Product Title</th>   
-                                            <th>Variation</th>
-                                            <th>Price</th>
-                                            <th>Stock </th>    
-                                            <th>Low stock</th>   
-                                       
-                                        </tr>
-                                     </thead>
-                                    <tbody>
-                             </tbody>
-                        </table>
+                            <table id="example23" class="mydatatable display nowrap table table-hover table-striped border" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th> 
+                                        <th>Product Title</th>   
+                                        <th>Variation</th>
+                                        <th>Price</th>
+                                        <th>Total Stock</th>
+                                        <th>Sold</th>
+                                        <th>Available Stock</th>
+                                        <th>Low Stock</th>   
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
 
                         </div>
                     </div>
@@ -333,6 +334,26 @@ button.btn_exe:hover {
         });
 
       });
-      
+$('.btn_exe').click(function () {
+    let params = {
+        name: $(".customerName").val(),
+        email: $(".email").val(),
+        phone: $(".phone").val(),
+        address: $(".address").val(),
+        orderNumber: $(".orderNumber").val(),
+        totalAmount: $(".totalAmount").val(),
+        paymentMethod: $(".paymentMethod").val(),
+        orderStatus: $(".orderStatus").val(),
+        paymentStatus: $(".paymentStatus").val(),
+        startDate: $(".startDate").val(),
+        endDate: $(".endDate").val()
+    };
+
+    let query = $.param(params);
+    window.open("{{ route('inventory.export') }}?" + query, '_blank');
+});
+
+
+
     </script>
 @endsection

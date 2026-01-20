@@ -12,11 +12,11 @@
     <!-- ============================================================== -->
     <!-- Plugins -->
     <!-- ============================================================== -->
-    <link href="{{asset('public/admin/assets/node_modules/morrisjs/morris.css')}}" rel="stylesheet">
-    <link href="{{asset('public/admin/assets/node_modules/sweetalert2/dist/sweetalert2.min.css')}}" rel="stylesheet">
-    <link href="{{asset('public/admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
-    <link href="{{asset('public/admin/assets/css/style.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('public/admin/assets/node_modules/select2/dist/css/select2.css')}}">
+    <link href="{{asset('admin/assets/node_modules/morrisjs/morris.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/assets/node_modules/sweetalert2/dist/sweetalert2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/assets/node_modules/toast-master/css/jquery.toast.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/assets/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('admin/assets/node_modules/select2/dist/css/select2.css')}}">
 
     <style>
         .menu-button:hover{
@@ -111,19 +111,19 @@
         </footer>
     </div>
 
-    <script src="{{asset('public/admin/assets/node_modules/jquery/dist/jquery.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/select2/dist/js/select2.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/raphael/raphael-min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/morrisjs/morris.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/toast-master/js/jquery.toast.js')}}"></script>
-    <script src="{{asset('public/admin/assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/js/perfect-scrollbar.jquery.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/js/waves.js')}}"></script>
-    <script src="{{asset('public/admin/assets/js/custom.js')}}"></script>
-    <script src="{{asset('public/admin/tinymce/tinymce.min.js')}}"></script>
-    <script src="{{asset('public/admin/assets/js/tinymce.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/select2/dist/js/select2.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/raphael/raphael-min.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/morrisjs/morris.min.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/toast-master/js/jquery.toast.js')}}"></script>
+    <script src="{{asset('admin/assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+    <script src="{{asset('admin/assets/js/perfect-scrollbar.jquery.min.js')}}"></script>
+    <script src="{{asset('admin/assets/js/waves.js')}}"></script>
+    <script src="{{asset('admin/assets/js/custom.js')}}"></script>
+    <script src="{{asset('admin/tinymce/tinymce.min.js')}}"></script>
+    <script src="{{asset('admin/assets/js/tinymce.js')}}"></script>
     <script>
       let site_url = "{{ URL::to('/') }}/public";
 

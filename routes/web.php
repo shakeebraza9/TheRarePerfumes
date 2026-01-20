@@ -187,6 +187,9 @@ Route::get('admin/reports/clients/export-excel', [App\Http\Controllers\Admin\Rep
 
   // inventory Report
   Route::get('/admin/reports/inventory/index', [App\Http\Controllers\Admin\ReportsController::class, 'inventoryIndex']);
+  // web.php
+Route::get('admin/reports/inventory/export', [App\Http\Controllers\Admin\ReportsController::class, 'inventoryExport'])->name('inventory.export');
+
 
   // payment
   Route::get('/admin/payment/index', [App\Http\Controllers\Admin\PaymentController::class, 'index']);
